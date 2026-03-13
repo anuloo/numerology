@@ -6,7 +6,7 @@ export default defineConfig({
     port: 5173,
 
     allowedHosts: [
-      'hall-sorry-along-highlights.trycloudflare.com'
+      'reproduced-amended-dealing-sheer.trycloudflare.com'
     ],
 
     hmr: {
