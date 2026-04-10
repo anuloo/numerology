@@ -16,6 +16,12 @@
 # Docs: https://docs.netlify.com/security/secure-access-to-sites/oauth-provider-tokens/
 #
 # Optional: edit content/homepage.md on github.com if you skip /admin entirely.
+#
+# Still see “Netlify Identity”? That is NOT this setup. Fix:
+# • Netlify → Identity → disable Identity (and under Services turn off Git Gateway).
+# • Those are separate from OAuth: Access & security → OAuth → GitHub provider.
+# • Open https://YOUR-SITE.netlify.app/admin/config.yml and confirm you see
+#   “name: github” (not git-gateway). If not, push latest code and wait for deploy.
 # -----------------------------------------------------------------------------
 backend:
   name: github
