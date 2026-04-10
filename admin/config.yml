@@ -22,13 +22,18 @@
 # • Those are separate from OAuth: Access & security → OAuth → GitHub provider.
 # • Open https://YOUR-SITE.netlify.app/admin/config.yml and confirm you see
 #   “name: github” (not git-gateway). If not, push latest code and wait for deploy.
+# Decap builds the login URL as: base_url + "/" + auth_endpoint + "?provider=..."
+# So auth_endpoint must be the PATH only ("auth"), never a full https:// URL — or you
+# get https://api.netlify.com/https://api.netlify.com/auth ... and "not found".
+# Defaults: base_url https://api.netlify.com, auth_endpoint auth (explicit below).
 # -----------------------------------------------------------------------------
 backend:
   name: github
   repo: anuloo/numerology
   branch: main
   auth_scope: repo
-  auth_endpoint: https://api.netlify.com/auth
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: uploads
 public_folder: /uploads
