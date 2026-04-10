@@ -1,0 +1,9 @@
+# Static site root = publish directory (no build step).
+[build]
+  publish = "."
+
+# Decap loads this over fetch(); explicit type avoids odd MIME defaults.
+[[headers]]
+  for = "/admin/config.yml"
+  [headers.values]
+    Content-Type = "text/yaml; charset=utf-8"

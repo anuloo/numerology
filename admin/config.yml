@@ -1,7 +1,14 @@
-# Replace repo + branch (and optionally base_url) after you connect Git hosting.
+# Decap + Netlify (correct setup)
+# -----------------------------------------------------------------------------
+# 1. Netlify: Site → Connect to Git → same repo you use for the site (e.g. anuloo/numerology).
+# 2. Netlify: Identity → Enable Identity → Registration / invites as you prefer.
+# 3. Netlify: Identity → Services → Enable Git Gateway (authorize GitHub if prompted).
+# 4. Deploy; open https://YOUR-SITE.netlify.app/admin/ (or your domain + /admin/).
+#
+# There is no `repo:` field with git-gateway—the repo is the one linked to this Netlify site.
+# -----------------------------------------------------------------------------
 backend:
-  name: github
-  repo: your-github-username/numerology
+  name: git-gateway
   branch: main
 
 media_folder: uploads
