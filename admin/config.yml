@@ -1,15 +1,28 @@
-# Decap + Netlify (correct setup)
+# Decap + GitHub + Netlify only (no Identity, no Git Gateway, no other hosts)
 # -----------------------------------------------------------------------------
-# 1. Netlify: Site → Connect to Git → same repo you use for the site (e.g. anuloo/numerology).
-# 2. Netlify: Identity → Enable Identity → Registration / invites as you prefer.
-# 3. Netlify: Identity → Services → Enable Git Gateway (authorize GitHub if prompted).
-# 4. Deploy; open https://YOUR-SITE.netlify.app/admin/ (or your domain + /admin/).
+# GitHub stores the repo. Netlify hosts the site. Netlify’s *OAuth* feature (not
+# Identity) holds your GitHub OAuth secret so /admin can log in.
 #
-# There is no `repo:` field with git-gateway—the repo is the one linked to this Netlify site.
+# 1) GitHub → Settings → Developer settings → OAuth Apps → New OAuth App
+#    • Authorization callback URL must be exactly: https://api.netlify.com/auth/done
+#    • Homepage URL: your live site (e.g. https://YOUR-SITE.netlify.app)
+#    • Save Client ID and generate a Client Secret (copy once).
+#
+# 2) Netlify → your site → Project configuration → Access & security → OAuth
+#    → Install provider → GitHub → paste Client ID + Client Secret → Save.
+#
+# 3) Same Netlify site must be connected to this GitHub repo for deploys.
+#
+# Docs: https://docs.netlify.com/security/secure-access-to-sites/oauth-provider-tokens/
+#
+# Optional: edit content/homepage.md on github.com if you skip /admin entirely.
 # -----------------------------------------------------------------------------
 backend:
-  name: git-gateway
+  name: github
+  repo: anuloo/numerology
   branch: main
+  auth_scope: repo
+  auth_endpoint: https://api.netlify.com/auth
 
 media_folder: uploads
 public_folder: /uploads

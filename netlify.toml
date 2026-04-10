@@ -1,4 +1,5 @@
-# Static site root = publish directory (no build step).
+# Netlify hosts the site. Decap uses GitHub backend + Netlify OAuth (not Identity).
+# GitHub OAuth callback in the GitHub app: https://api.netlify.com/auth/done
 [build]
   publish = "."
 
