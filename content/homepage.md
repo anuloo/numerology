@@ -8,7 +8,7 @@ nav_link_features: Features
 nav_link_founder: Founder
 nav_link_kickstarter: Kickstarter
 nav_cta_back_launch: Back the Launch
-hero_title: Change your name to music
+hero_title: Change your name to my nob
 hero_body: |
   An iOS and Android app that transforms a person’s name into
   generative, calming music. Each name becomes a unique musical
@@ -19,8 +19,10 @@ hero_btn_demo: Watch the Demo
 hero_image: ./assets/images/hero-iphone-700x520.png
 hero_image_alt: Ambient gradients and waveform visual
 what_is_heading: What is numerology?
-what_is_p1: |
-  Numerology assigns to each letter of the alphabet a single-digit number ranging
+what_is_p1: >
+  Numerology assigns to each letter of the alphabet a single-digit number
+  ranging
+
   from 1 to 9, and each number has its own attributes and characteristics.
 what_is_p2: |
   The vowels, consonants, and numbers in a name and birth date are totaled and
@@ -137,27 +139,41 @@ roadmap_phase4_body: |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
   vel eros ut purus cursus posuere.
 lifesong_heading: What is a Numyana Lifesong?
-lifesong_lead: |
+lifesong_lead: >
   The Numyana Lifesong is a non-AI-generated, beautifully orchestrated piece of
+
   music created by gifted, professional composers using your Numyana sequence and
+
   a short, guided questionnaire about you.
-lifesong_p1: |
-  This is our top-level, luxury reward: you receive both audio and a printed score
+lifesong_p1: >
+  This is our top-level, luxury reward: you receive both audio and a printed
+  score
+
   of your original Lifesong composition, crafted from your chosen Numyana profile
+
   and personal story.
-lifesong_p2: |
-  A Numyana Lifesong is available at $750 for one name, or $1,000 for two — a way
+lifesong_p2: >
+  A Numyana Lifesong is available at $750 for one name, or $1,000 for two — a
+  way
+
   to commemorate heroes and loved ones, past or present, with the permanence of a
+
   bespoke musical work.
 faq_heading: Is my Numyana really unique?
-faq_p1: |
-  We believe every Numyana melody is as personal as a fingerprint or a face. While
+faq_p1: >
+  We believe every Numyana melody is as personal as a fingerprint or a face.
+  While
+
   it is technically possible for two people to share the same ringtone, the odds
+
   are very slim.
-faq_p2: |
+faq_p2: >
   When you include first, middle, and last name — maybe a nickname — along with
+
   date of birth, the chance of replicating someone else’s Numyana profile becomes
+
   highly unlikely. You choose what to enter, and the app’s tools let you further
+
   shape sound, rhythm, and tempo to make your melody distinctly your own.
 kickstarter_heading: Back the Kickstarter
 kickstarter_p1: |
