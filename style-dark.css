@@ -15,6 +15,11 @@ body {
   line-height: 1.6;
 }
 
+/* CMS text fields from YAML block scalars often include intentional line breaks */
+.cms-multiline {
+  white-space: pre-line;
+}
+
 img,
 video {
   max-width: 100%;

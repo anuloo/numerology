@@ -1,0 +1,115 @@
+# Replace repo + branch (and optionally base_url) after you connect Git hosting.
+backend:
+  name: github
+  repo: your-github-username/numerology
+  branch: main
+
+media_folder: uploads
+public_folder: /uploads
+
+local_backend: false
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - label: Homepage
+        name: homepage
+        file: content/homepage.md
+        format: frontmatter
+        fields:
+          - { label: Page title (browser tab), name: site_page_title, widget: string }
+          - { label: Logo / brand (aria-label), name: site_logo_aria_label, widget: string }
+          - { label: Nav — What It Is, name: nav_link_what_is, widget: string }
+          - { label: Nav — Numerology → Sound, name: nav_link_numerology, widget: string }
+          - { label: Nav — Demo, name: nav_link_demo, widget: string }
+          - { label: Nav — Features, name: nav_link_features, widget: string }
+          - { label: Nav — Founder, name: nav_link_founder, widget: string }
+          - { label: Nav — Kickstarter, name: nav_link_kickstarter, widget: string }
+          - { label: Nav — Back the Launch (button), name: nav_cta_back_launch, widget: string }
+          - { label: Hero — Title, name: hero_title, widget: string }
+          - { label: Hero — Body, name: hero_body, widget: text }
+          - { label: Hero — Support button, name: hero_btn_kickstarter, widget: string }
+          - { label: Hero — Demo button, name: hero_btn_demo, widget: string }
+          - { label: Hero — Image, name: hero_image, widget: image }
+          - { label: Hero — Image alt text, name: hero_image_alt, widget: string }
+          - { label: What is numerology — Heading, name: what_is_heading, widget: string }
+          - { label: What is numerology — Paragraph 1, name: what_is_p1, widget: text }
+          - { label: What is numerology — Paragraph 2, name: what_is_p2, widget: text }
+          - { label: What is numerology — Paragraph 3, name: what_is_p3, widget: text }
+          - { label: What is numerology — Image, name: what_is_image, widget: image }
+          - { label: What is numerology — Image alt, name: what_is_image_alt, widget: string }
+          - { label: Numerology section — Heading, name: numerology_heading, widget: string }
+          - { label: Numerology section — Lead, name: numerology_lead, widget: text }
+          - { label: Step 1 — Title, name: numerology_step1_title, widget: string }
+          - { label: Step 1 — Body, name: numerology_step1_body, widget: text }
+          - { label: Step 2 — Title, name: numerology_step2_title, widget: string }
+          - { label: Step 2 — Body, name: numerology_step2_body, widget: text }
+          - { label: Step 3 — Title, name: numerology_step3_title, widget: string }
+          - { label: Step 3 — Body, name: numerology_step3_body, widget: text }
+          - { label: Demo — Heading, name: demo_heading, widget: string }
+          - { label: Demo — Paragraph 1, name: demo_p1, widget: text }
+          - { label: Demo — Paragraph 2, name: demo_p2, widget: text }
+          - { label: Demo — Video poster URL, name: demo_video_poster, widget: string }
+          - { label: Demo — Video file URL, name: demo_video_src, widget: string }
+          - { label: Demo — Video fallback text, name: demo_video_fallback, widget: string }
+          - { label: Features — Heading, name: features_heading, widget: string }
+          - { label: Features — Lead, name: features_lead, widget: text }
+          - { label: Feature card 1 — Title, name: features_card1_title, widget: string }
+          - { label: Feature card 1 — Body, name: features_card1_body, widget: text }
+          - { label: Feature card 2 — Title, name: features_card2_title, widget: string }
+          - { label: Feature card 2 — Body, name: features_card2_body, widget: text }
+          - { label: Feature card 3 — Title, name: features_card3_title, widget: string }
+          - { label: Feature card 3 — Body, name: features_card3_body, widget: text }
+          - { label: Feature card 4 — Title, name: features_card4_title, widget: string }
+          - { label: Feature card 4 — Body, name: features_card4_body, widget: text }
+          - { label: Audience — Heading, name: audience_heading, widget: string }
+          - { label: Audience — Intro, name: audience_intro, widget: text }
+          - { label: Audience — Bullet 1, name: audience_bullet_1, widget: string }
+          - { label: Audience — Bullet 2, name: audience_bullet_2, widget: string }
+          - { label: Audience — Bullet 3, name: audience_bullet_3, widget: string }
+          - { label: Audience — Bullet 4, name: audience_bullet_4, widget: string }
+          - { label: Audience — Image, name: audience_image, widget: image }
+          - { label: Audience — Image alt, name: audience_image_alt, widget: string }
+          - { label: Founder — Image, name: founder_image, widget: image }
+          - { label: Founder — Image alt, name: founder_image_alt, widget: string }
+          - { label: Founder — Heading, name: founder_heading, widget: string }
+          - { label: Founder — Paragraph 1, name: founder_p1, widget: text }
+          - { label: Founder — Paragraph 2, name: founder_p2, widget: text }
+          - { label: Founder — Paragraph 3, name: founder_p3, widget: text }
+          - { label: Founder meta 1 — Heading, name: founder_meta1_heading, widget: string }
+          - { label: Founder meta 1 — Text, name: founder_meta1_text, widget: string }
+          - { label: Founder meta 2 — Heading, name: founder_meta2_heading, widget: string }
+          - { label: Founder meta 2 — Text, name: founder_meta2_text, widget: string }
+          - { label: Testimonial — Heading, name: testimonial_heading, widget: string }
+          - { label: Testimonial — Quote, name: testimonial_quote, widget: text }
+          - { label: Testimonial — Video poster URL, name: testimonial_video_poster, widget: string }
+          - { label: Testimonial — Video file URL, name: testimonial_video_src, widget: string }
+          - { label: Testimonial — Video fallback text, name: testimonial_video_fallback, widget: string }
+          - { label: Roadmap — Heading, name: roadmap_heading, widget: string }
+          - { label: Roadmap — Phase 1 title, name: roadmap_phase1_title, widget: string }
+          - { label: Roadmap — Phase 1 body, name: roadmap_phase1_body, widget: text }
+          - { label: Roadmap — Phase 2 title, name: roadmap_phase2_title, widget: string }
+          - { label: Roadmap — Phase 2 body, name: roadmap_phase2_body, widget: text }
+          - { label: Roadmap — Phase 3 title, name: roadmap_phase3_title, widget: string }
+          - { label: Roadmap — Phase 3 body, name: roadmap_phase3_body, widget: text }
+          - { label: Roadmap — Phase 4 title, name: roadmap_phase4_title, widget: string }
+          - { label: Roadmap — Phase 4 body, name: roadmap_phase4_body, widget: text }
+          - { label: Lifesong — Heading, name: lifesong_heading, widget: string }
+          - { label: Lifesong — Lead, name: lifesong_lead, widget: text }
+          - { label: Lifesong — Paragraph 1, name: lifesong_p1, widget: text }
+          - { label: Lifesong — Paragraph 2, name: lifesong_p2, widget: text }
+          - { label: FAQ — Heading, name: faq_heading, widget: string }
+          - { label: FAQ — Paragraph 1, name: faq_p1, widget: text }
+          - { label: FAQ — Paragraph 2, name: faq_p2, widget: text }
+          - { label: Kickstarter — Heading, name: kickstarter_heading, widget: string }
+          - { label: Kickstarter — Paragraph 1, name: kickstarter_p1, widget: text }
+          - { label: Kickstarter — Paragraph 2, name: kickstarter_p2, widget: text }
+          - { label: Kickstarter — Notify button, name: kickstarter_btn_notify, widget: string }
+          - { label: Kickstarter — Top button, name: kickstarter_btn_top, widget: string }
+          - { label: Footer — Tagline, name: footer_tagline, widget: string }
+          - { label: Footer — Copyright line, name: footer_copyright, widget: string }
+          - { label: Footer link — What It Is, name: footer_link_what_is, widget: string }
+          - { label: Footer link — Features, name: footer_link_features, widget: string }
+          - { label: Footer link — Founder, name: footer_link_founder, widget: string }
+          - { label: Footer link — Kickstarter, name: footer_link_kickstarter, widget: string }

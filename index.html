@@ -9,7 +9,11 @@
   <body>
     <header class="hero" id="top">
       <nav class="nav">
-        <div class="logo" aria-label="Numerology Generator logo">
+        <div
+          class="logo"
+          aria-label="Numerology Generator logo"
+          data-cms-aria-label="site_logo_aria_label"
+        >
           <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
             <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="2" />
             <circle cx="32" cy="32" r="12" fill="none" stroke="currentColor" stroke-width="2" />
@@ -20,35 +24,38 @@
           </svg>
         </div>
         <div class="nav-links">
-          <a href="#what-is">What It Is</a>
-          <a href="#numerology">Numerology → Sound</a>
-          <a href="#demo">Demo</a>
-          <a href="#features">Features</a>
-          <a href="#founder">Founder</a>
-          <a href="#kickstarter">Kickstarter</a>
+          <a href="#what-is" data-cms="nav_link_what_is">What It Is</a>
+          <a href="#numerology" data-cms="nav_link_numerology">Numerology → Sound</a>
+          <a href="#demo" data-cms="nav_link_demo">Demo</a>
+          <a href="#features" data-cms="nav_link_features">Features</a>
+          <a href="#founder" data-cms="nav_link_founder">Founder</a>
+          <a href="#kickstarter" data-cms="nav_link_kickstarter">Kickstarter</a>
         </div>
-        <a class="btn btn-primary" href="#kickstarter">Back the Launch</a>
+        <a class="btn btn-primary" href="#kickstarter" data-cms="nav_cta_back_launch">Back the Launch</a>
       </nav>
 
       <div class="hero-content">
         <div class="hero-text" data-reveal="left">
-          <h1>Change your name to music</h1>
-          <p>
+          <h1 data-cms="hero_title">Change your name to music</h1>
+          <p class="cms-multiline" data-cms="hero_body">
             An iOS and Android app that transforms a person’s name into
             generative, calming music. Each name becomes a unique musical
             identity based on numeric vibration translated into tone, scale,
             tempo, and harmony.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#kickstarter">Support on Kickstarter</a>
-            <a class="btn btn-ghost" href="#demo">Watch the Demo</a>
+            <a class="btn btn-primary" href="#kickstarter" data-cms="hero_btn_kickstarter"
+              >Support on Kickstarter</a
+            >
+            <a class="btn btn-ghost" href="#demo" data-cms="hero_btn_demo">Watch the Demo</a>
           </div>
         </div>
         <div class="hero-media" data-reveal="right" data-reveal-delay="100">
-          <!-- Replace with: ./assets/images/hero-iphone-700x520.png -->
           <img
             src="./assets/images/hero-iphone-700x520.png"
             alt="Ambient gradients and waveform visual"
+            data-cms-src="hero_image"
+            data-cms-alt="hero_image_alt"
           />
         </div>
       </div>
@@ -58,27 +65,28 @@
       <section class="section" id="what-is">
         <div class="section-inner two-col">
           <div data-reveal="left">
-            <h2>What is numerology?</h2>
-            <p>
+            <h2 data-cms="what_is_heading">What is numerology?</h2>
+            <p class="cms-multiline" data-cms="what_is_p1">
               Numerology assigns to each letter of the alphabet a single-digit number ranging
               from 1 to 9, and each number has its own attributes and characteristics.
             </p>
-            <p>
+            <p class="cms-multiline" data-cms="what_is_p2">
               The vowels, consonants, and numbers in a name and birth date are totaled and
               reduced to a single digit to sum up a person’s nature. Numerology is said to
               provide insight and revelations, and there are various systems that have been
               used throughout the ages.
             </p>
-            <p>
+            <p class="cms-multiline" data-cms="what_is_p3">
               It was especially popular in Europe during the 18th century and continues to
               have a strong following today.
             </p>
           </div>
           <div class="media-card" data-reveal="right" data-reveal-delay="120">
-            <!-- Replace with: ./assets/images/what-is-name-music-640x480.svg -->
             <img
               src="./assets/images/what-is-name-music-640x480.svg"
               alt="Name-based music visualization"
+              data-cms-src="what_is_image"
+              data-cms-alt="what_is_image_alt"
             />
           </div>
         </div>
@@ -86,31 +94,31 @@
 
       <section class="section glow-panel" id="numerology">
         <div class="section-inner" data-reveal>
-          <h2>How does a name become a personal Numyana melody?</h2>
-          <p class="section-lead">
+          <h2 data-cms="numerology_heading">How does a name become a personal Numyana melody?</h2>
+          <p class="section-lead cms-multiline" data-cms="numerology_lead">
             The Numyana app is your translator. It turns the letters you feed into it into
             numbers based on their numerology values, then transforms that sequence into a
             personal melody.
           </p>
           <div class="steps">
             <div class="step" data-reveal data-reveal-delay="60">
-              <h3>1. Name to numbers</h3>
-              <p>
+              <h3 data-cms="numerology_step1_title">1. Name to numbers</h3>
+              <p class="cms-multiline" data-cms="numerology_step1_body">
                 Each letter in your name, birth date, nickname, or any word you enter is
                 converted into a number using its numerology value, creating a unique string
                 of digits.
               </p>
             </div>
             <div class="step" data-reveal data-reveal-delay="140">
-              <h3>2. Numbers to notes</h3>
-              <p>
+              <h3 data-cms="numerology_step2_title">2. Numbers to notes</h3>
+              <p class="cms-multiline" data-cms="numerology_step2_body">
                 Numyana maps those numbers to musical notes, so what you hear is a sequence
                 of tones that mirrors the exact spelling you entered.
               </p>
             </div>
             <div class="step" data-reveal data-reveal-delay="220">
-              <h3>3. Notes to your melody</h3>
-              <p>
+              <h3 data-cms="numerology_step3_title">3. Notes to your melody</h3>
+              <p class="cms-multiline" data-cms="numerology_step3_body">
                 The app assembles these notes into a flowing composition. Each note relates
                 back to a letter and its number, revealing the music encoded in your words.
               </p>
@@ -122,23 +130,22 @@
       <section class="section" id="demo">
         <div class="section-inner two-col">
           <div data-reveal="left">
-            <h2>What does the Numyana app do?</h2>
-            <p>
+            <h2 data-cms="demo_heading">What does the Numyana app do?</h2>
+            <p class="cms-multiline" data-cms="demo_p1">
               The Numyana app lets you hear your name as a melody and then tailor the sound,
               tempo, and rhythm using simple editing tools before you download it as a
               ringtone or share it with friends and family.
             </p>
-            <p>
+            <p class="cms-multiline" data-cms="demo_p2">
               The app converts any text, including numerals and lucky numbers, into musical
               notes using numerology. Yours, your friends, loved ones, babies, pets,
               celebrities, and heroes — any name is game for Numyana.
             </p>
           </div>
           <div class="media-card" data-reveal="right" data-reveal-delay="100">
-            <!-- Replace with: ./assets/videos/demo.mp4 -->
-            <video controls poster="https://placehold.co/640x360/png">
-              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+            <video controls poster="https://placehold.co/640x360/png" data-cms-poster="demo_video_poster">
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" data-cms-src="demo_video_src" />
+              <span data-cms="demo_video_fallback">Your browser does not support the video tag.</span>
             </video>
           </div>
         </div>
@@ -146,36 +153,36 @@
 
       <section class="section" id="features">
         <div class="section-inner" data-reveal>
-          <h2>App Features</h2>
-          <p class="section-lead">
+          <h2 data-cms="features_heading">App Features</h2>
+          <p class="section-lead cms-multiline" data-cms="features_lead">
             A calm, focused experience designed for daily listening and deep
             personalization.
           </p>
           <div class="card-grid">
             <article class="card" data-reveal data-reveal-delay="40">
-              <h3>Personalized Sound Identity</h3>
-              <p>
+              <h3 data-cms="features_card1_title">Personalized Sound Identity</h3>
+              <p class="cms-multiline" data-cms="features_card1_body">
                 Hear your own name as music, translated from letters and numbers into a
                 melodic pattern that feels uniquely yours.
               </p>
             </article>
             <article class="card" data-reveal data-reveal-delay="120">
-              <h3>Generative Ambient Engine</h3>
-              <p>
+              <h3 data-cms="features_card2_title">Generative Ambient Engine</h3>
+              <p class="cms-multiline" data-cms="features_card2_body">
                 Let Numyana shape your sequence of notes into a flowing, listenable piece
                 that you can play on repeat as a calming, ambient soundtrack.
               </p>
             </article>
             <article class="card" data-reveal data-reveal-delay="200">
-              <h3>More than a ringtone</h3>
-              <p>
+              <h3 data-cms="features_card3_title">More than a ringtone</h3>
+              <p class="cms-multiline" data-cms="features_card3_body">
                 Use your melody to elevate your mood, boost positivity, and inspire new
                 ideas — sing it, play it, write lyrics, or build a full song from it.
               </p>
             </article>
             <article class="card" data-reveal data-reveal-delay="280">
-              <h3>A ringtone like no other</h3>
-              <p>
+              <h3 data-cms="features_card4_title">A ringtone like no other</h3>
+              <p class="cms-multiline" data-cms="features_card4_body">
                 Your Numyana ringtone is exclusively and personally yours, always
                 identifiable in a crowded room and a great conversation starter.
               </p>
@@ -187,23 +194,24 @@
       <section class="section glow-panel" id="audience">
         <div class="section-inner two-col">
           <div data-reveal="left">
-            <h2>Who It’s For</h2>
-            <p>
+            <h2 data-cms="audience_heading">Who It’s For</h2>
+            <p class="cms-multiline" data-cms="audience_intro">
               Numyana is for anyone who loves the idea of hearing their story as music and
               sharing something truly new with the people around them.
             </p>
             <ul class="soft-list">
-              <li>People who want a one-of-a-kind, personal ringtone</li>
-              <li>Friends and families looking for a playful, meaningful gift</li>
-              <li>Music lovers and creators curious about turning words into melody</li>
-              <li>Anyone who wants a little extra positivity and good vibes in their day</li>
+              <li data-cms="audience_bullet_1">People who want a one-of-a-kind, personal ringtone</li>
+              <li data-cms="audience_bullet_2">Friends and families looking for a playful, meaningful gift</li>
+              <li data-cms="audience_bullet_3">Music lovers and creators curious about turning words into melody</li>
+              <li data-cms="audience_bullet_4">Anyone who wants a little extra positivity and good vibes in their day</li>
             </ul>
           </div>
           <div class="media-card" data-reveal="right" data-reveal-delay="120">
-            <!-- Replace with: ./assets/images/audience.jpg -->
             <img
               src="https://placehold.co/640x480/png"
               alt="Calm listening moment"
+              data-cms-src="audience_image"
+              data-cms-alt="audience_image_alt"
             />
           </div>
         </div>
@@ -212,37 +220,38 @@
       <section class="section" id="founder">
         <div class="section-inner two-col">
           <div class="media-card" data-reveal="left">
-            <!-- Replace with: ./assets/images/founder.jpg -->
             <img
               src="https://placehold.co/640x720/png"
               alt="Founder portrait"
+              data-cms-src="founder_image"
+              data-cms-alt="founder_image_alt"
             />
           </div>
           <div data-reveal="right" data-reveal-delay="120">
-            <h2>Founder Story</h2>
-            <p>
+            <h2 data-cms="founder_heading">Founder Story</h2>
+            <p class="cms-multiline" data-cms="founder_p1">
               The concept was founded by two women in Toronto, Canada in 1981. Today’s
               superior technology enables us to revive the idea, take it to the next level,
               and share it with the world.
             </p>
-            <p>
+            <p class="cms-multiline" data-cms="founder_p2">
               Nowhere else can you hear how your name sounds as music, letter for letter,
               note for note. The Numyana Lifesong app is brand new to the marketplace,
               backed by decades of human study and experience in this fascinating art and
               science.
             </p>
-            <p>
+            <p class="cms-multiline" data-cms="founder_p3">
               A blend of math, music, language, the arts, and spirituality, Numyana is
               unique — a vision that imitators may echo but can never truly duplicate.
             </p>
             <div class="founder-meta">
               <div>
-                <strong>Proven builder</strong>
-                <span>Established reputation and prior success.</span>
+                <strong data-cms="founder_meta1_heading">Proven builder</strong>
+                <span data-cms="founder_meta1_text">Established reputation and prior success.</span>
               </div>
               <div>
-                <strong>Community-led</strong>
-                <span>Backed by early supporters and practitioners.</span>
+                <strong data-cms="founder_meta2_heading">Community-led</strong>
+                <span data-cms="founder_meta2_text">Backed by early supporters and practitioners.</span>
               </div>
             </div>
           </div>
@@ -252,18 +261,25 @@
       <section class="section" id="testimonial">
         <div class="section-inner two-col">
           <div data-reveal="left">
-            <h2>Founder Testimonial</h2>
-            <p>
+            <h2 data-cms="testimonial_heading">Founder Testimonial</h2>
+            <p class="cms-multiline" data-cms="testimonial_quote">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               posuere, enim sed vehicula pellentesque, ligula sapien facilisis
               libero, a luctus augue sem nec nibh.
             </p>
           </div>
           <div class="media-card" data-reveal="right" data-reveal-delay="120">
-            <!-- Replace with: ./assets/videos/founder-testimonial.mp4 -->
-            <video controls poster="https://placehold.co/640x360/png">
-              <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+            <video
+              controls
+              poster="https://placehold.co/640x360/png"
+              data-cms-poster="testimonial_video_poster"
+            >
+              <source
+                src="https://www.w3schools.com/html/movie.mp4"
+                type="video/mp4"
+                data-cms-src="testimonial_video_src"
+              />
+              <span data-cms="testimonial_video_fallback">Your browser does not support the video tag.</span>
             </video>
           </div>
         </div>
@@ -271,13 +287,13 @@
 
       <section class="section glow-panel" id="roadmap">
         <div class="section-inner" data-reveal>
-          <h2>Roadmap Timeline</h2>
+          <h2 data-cms="roadmap_heading">Roadmap Timeline</h2>
           <div class="timeline">
             <div class="timeline-item" data-reveal data-reveal-delay="40">
               <div class="timeline-marker"></div>
               <div>
-                <h3>Phase 1 — Core Engine</h3>
-                <p>
+                <h3 data-cms="roadmap_phase1_title">Phase 1 — Core Engine</h3>
+                <p class="cms-multiline" data-cms="roadmap_phase1_body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                   facilisi. Phasellus ullamcorper velit ut augue posuere.
                 </p>
@@ -286,8 +302,8 @@
             <div class="timeline-item" data-reveal data-reveal-delay="120">
               <div class="timeline-marker"></div>
               <div>
-                <h3>Phase 2 — Mobile Experience</h3>
-                <p>
+                <h3 data-cms="roadmap_phase2_title">Phase 2 — Mobile Experience</h3>
+                <p class="cms-multiline" data-cms="roadmap_phase2_body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   fringilla dolor vitae dui interdum, at luctus lorem commodo.
                 </p>
@@ -296,8 +312,8 @@
             <div class="timeline-item" data-reveal data-reveal-delay="200">
               <div class="timeline-marker"></div>
               <div>
-                <h3>Phase 3 — Community Sharing</h3>
-                <p>
+                <h3 data-cms="roadmap_phase3_title">Phase 3 — Community Sharing</h3>
+                <p class="cms-multiline" data-cms="roadmap_phase3_body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Curabitur a dictum erat, ac commodo velit.
                 </p>
@@ -306,8 +322,8 @@
             <div class="timeline-item" data-reveal data-reveal-delay="280">
               <div class="timeline-marker"></div>
               <div>
-                <h3>Phase 4 — Sound Library Expansion</h3>
-                <p>
+                <h3 data-cms="roadmap_phase4_title">Phase 4 — Sound Library Expansion</h3>
+                <p class="cms-multiline" data-cms="roadmap_phase4_body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   vel eros ut purus cursus posuere.
                 </p>
@@ -319,18 +335,18 @@
 
       <section class="section" id="lifesong">
         <div class="section-inner" data-reveal>
-          <h2>What is a Numyana Lifesong?</h2>
-          <p class="section-lead">
+          <h2 data-cms="lifesong_heading">What is a Numyana Lifesong?</h2>
+          <p class="section-lead cms-multiline" data-cms="lifesong_lead">
             The Numyana Lifesong is a non-AI-generated, beautifully orchestrated piece of
             music created by gifted, professional composers using your Numyana sequence and
             a short, guided questionnaire about you.
           </p>
-          <p>
+          <p class="cms-multiline" data-cms="lifesong_p1">
             This is our top-level, luxury reward: you receive both audio and a printed score
             of your original Lifesong composition, crafted from your chosen Numyana profile
             and personal story.
           </p>
-          <p>
+          <p class="cms-multiline" data-cms="lifesong_p2">
             A Numyana Lifesong is available at $750 for one name, or $1,000 for two — a way
             to commemorate heroes and loved ones, past or present, with the permanence of a
             bespoke musical work.
@@ -340,13 +356,13 @@
 
       <section class="section glow-panel" id="faq">
         <div class="section-inner" data-reveal>
-          <h2>Is my Numyana really unique?</h2>
-          <p>
+          <h2 data-cms="faq_heading">Is my Numyana really unique?</h2>
+          <p class="cms-multiline" data-cms="faq_p1">
             We believe every Numyana melody is as personal as a fingerprint or a face. While
             it is technically possible for two people to share the same ringtone, the odds
             are very slim.
           </p>
-          <p>
+          <p class="cms-multiline" data-cms="faq_p2">
             When you include first, middle, and last name — maybe a nickname — along with
             date of birth, the chance of replicating someone else’s Numyana profile becomes
             highly unlikely. You choose what to enter, and the app’s tools let you further
@@ -358,21 +374,21 @@
       <section class="section" id="kickstarter">
         <div class="section-inner cta-panel" data-reveal="zoom">
           <div>
-            <h2>Back the Kickstarter</h2>
-            <p>
+            <h2 data-cms="kickstarter_heading">Back the Kickstarter</h2>
+            <p class="cms-multiline" data-cms="kickstarter_p1">
               Support our Kickstarter campaign and you’ll be first in line to receive the
               Numyana app before public launch. Every supporter above $25 will receive a
               special reward, and contributions under $25 are equally appreciated.
             </p>
-            <p>
+            <p class="cms-multiline" data-cms="kickstarter_p2">
               Funds from a successful campaign will go toward bringing the app to market
               within a few months and fairly compensating the composers and creators who
               make Numyana possible.
             </p>
           </div>
           <div class="cta-actions">
-            <a class="btn btn-primary" href="#">Notify Me</a>
-            <a class="btn btn-ghost" href="#top">Return to Top</a>
+            <a class="btn btn-primary" href="#" data-cms="kickstarter_btn_notify">Notify Me</a>
+            <a class="btn btn-ghost" href="#top" data-cms="kickstarter_btn_top">Return to Top</a>
           </div>
         </div>
       </section>
@@ -381,7 +397,11 @@
     <footer class="footer">
       <div class="footer-inner" data-reveal>
         <div>
-          <div class="logo" aria-label="Numerology Generator logo">
+          <div
+            class="logo"
+            aria-label="Numerology Generator logo"
+            data-cms-aria-label="site_logo_aria_label"
+          >
             <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
               <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="2" />
               <circle cx="32" cy="32" r="12" fill="none" stroke="currentColor" stroke-width="2" />
@@ -391,17 +411,17 @@
               />
             </svg>
           </div>
-          <p>Calm, premium, and mystical sound identities.</p>
+          <p data-cms="footer_tagline">Calm, premium, and mystical sound identities.</p>
         </div>
         <div class="footer-links">
-          <a href="#what-is">What It Is</a>
-          <a href="#features">Features</a>
-          <a href="#founder">Founder</a>
-          <a href="#kickstarter">Kickstarter</a>
+          <a href="#what-is" data-cms="footer_link_what_is">What It Is</a>
+          <a href="#features" data-cms="footer_link_features">Features</a>
+          <a href="#founder" data-cms="footer_link_founder">Founder</a>
+          <a href="#kickstarter" data-cms="footer_link_kickstarter">Kickstarter</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Numerology Generator All rights reserved.</span>
+        <span data-cms="footer_copyright">© 2026 Numerology Generator All rights reserved.</span>
       </div>
     </footer>
     <script src="main.js"></script>
