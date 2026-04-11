@@ -86,13 +86,17 @@ function applyCms(data) {
 
   if (hasKey(data, "site_page_title")) {
     const t = document.querySelector("title");
-    if (t) t.textContent = String(data.site_page_title);
+    const titleVal = String(data.site_page_title).trim();
+    if (t && titleVal) t.textContent = titleVal;
   }
 
   document.querySelectorAll("[data-cms]").forEach((el) => {
     const key = el.dataset.cms;
     if (!key || !hasKey(data, key)) return;
-    el.textContent = String(data[key]);
+    const raw = String(data[key]);
+    // Empty CMS values must not wipe baked-in HTML (Decap can save blanks; live file may differ from repo).
+    if (raw.trim() === "") return;
+    el.textContent = raw;
   });
 
   document.querySelectorAll("[data-cms-src]").forEach((el) => {
