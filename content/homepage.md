@@ -8,7 +8,7 @@ nav_link_features: Features
 nav_link_founder: Founder
 nav_link_kickstarter: Kickstarter
 nav_cta_back_launch: Back the Launch
-hero_title: Change your name to my nob
+hero_title: Change your name to my music
 hero_body: |
   An iOS and Android app that transforms a person’s name into
   generative, calming music. Each name becomes a unique musical
