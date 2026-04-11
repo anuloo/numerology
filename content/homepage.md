@@ -92,7 +92,7 @@ audience_bullet_1: People who want a one-of-a-kind, personal ringtone
 audience_bullet_2: Friends and families looking for a playful, meaningful gift
 audience_bullet_3: Music lovers and creators curious about turning words into melody
 audience_bullet_4: Anyone who wants a little extra positivity and good vibes in their day
-audience_image: https://placehold.co/640x480/png
+audience_image: /uploads/openart-image_7pfuc-if_1768246601914_raw.jpg
 audience_image_alt: Calm listening moment
 founder_image: https://placehold.co/640x720/png
 founder_image_alt: Founder portrait
