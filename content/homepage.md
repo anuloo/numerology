@@ -144,7 +144,7 @@ lifesong_lead: >
 
   music created by gifted, professional composers using your Numyana sequence and
 
-  a short, guided questionnaire about you.
+  a short, guided questionnaire about you
 lifesong_p1: >
   This is our top-level, luxury reward: you receive both audio and a printed
   score
