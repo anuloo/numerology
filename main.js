@@ -50,7 +50,7 @@ function parseSimpleYaml(src) {
       continue;
     }
 
-    const blockStart = trimmedRight.match(/^([\w_]+):\s*\|-?\s*$/);
+    const blockStart = trimmedRight.match(/^([\w_]+):\s*[|>]-?\s*$/);
     if (blockStart) {
       flushBlock();
       blockKey = blockStart[1];
